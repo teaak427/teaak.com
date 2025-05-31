@@ -3,20 +3,557 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Copilot Đơn Giản</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>teaak427 - Nhà Thiết Kế Đồ Họa</title>
+    <meta name="description" content="Portfolio của teaak427 - Chuyên gia thiết kế đồ họa 2D">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Web Copilot Đơn Giản</h1>
-        <div class="chat-container">
-            <div id="chat-messages" class="chat-messages"></div>
-            <div class="input-area">
-                <textarea id="user-input" placeholder="Hỏi tôi bất cứ điều gì..."></textarea>
-                <button id="send-button">Gửi</button>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">teaak427</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
             </div>
         </div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">teaak427</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Dịch vụ</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Tôi là <span class="highlight">teaak427</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Nhà thiết kế đồ họa chuyên nghiệp</h2>
+                    <p class="hero-description">
+                        Chuyên tạo ra những thiết kế độc đáo và ấn tượng. Từ nhận diện thương hiệu, 
+                        poster, brochure cho đến các sản phẩm đồ họa sáng tạo khác.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Xem portfolio</a>
+                        <a href="#contact" class="btn btn-outline">Liên hệ ngay</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Giới thiệu</h2>
+                <p class="section-subtitle">Đam mê thiết kế, chuyên nghiệp trong từng chi tiết</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Xin chào, tôi là teaak427</h3>
+                        <p>
+                            Với hơn 3 năm kinh nghiệm trong lĩnh vực thiết kế đồ họa, tôi chuyên tạo ra 
+                            những sản phẩm thiết kế chất lượng cao, từ logo, branding cho đến các ấn phẩm 
+                            truyền thông đa dạng.
+                        </p>
+                        <p>
+                            Tôi tin rằng thiết kế tốt không chỉ đẹp mắt mà còn phải truyền tải được 
+                            thông điệp và tạo ra kết nối với người xem. Mỗi dự án là một cơ hội để 
+                            tôi thể hiện sự sáng tạo và chuyên môn.
+                        </p>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Dự án hoàn thành</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Khách hàng hài lòng</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Năm kinh nghiệm</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-section">
+                    <h3>Chuyên môn</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Thiết kế Logo</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Nhận diện thương hiệu</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-image"></i>
+                            <span>Thiết kế Poster</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-print"></i>
+                            <span>Ấn phẩm in</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-pencil-alt"></i>
+                            <span>Illustration</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Thiết kế digital</span>
+                        </div>
+                    </div>
+                    
+                    <h3>Công cụ sử dụng</h3>
+                    <div class="tools-list">
+                        <span class="tool">Adobe Photoshop</span>
+                        <span class="tool">Adobe Illustrator</span>
+                        <span class="tool">Adobe InDesign</span>
+                        <span class="tool">Figma</span>
+                        <span class="tool">Canva Pro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Những dự án tiêu biểu mà tôi đã thực hiện</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="logo">Logo</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="poster">Poster</button>
+                <button class="filter-btn" data-filter="print">In ấn</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="logo">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop" alt="Thiết kế Logo Coffee">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Logo Coffee House</h3>
+                                <p>Thiết kế logo cho chuỗi cà phê</p>
+                                <a href="#" class="view-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&h=400&fit=crop" alt="Branding Restaurant">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Nhận diện thương hiệu</h3>
+                                <p>Bộ nhận diện hoàn chỉnh cho nhà hàng</p>
+                                <a href="#" class="view-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="poster">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Poster Event">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Poster sự kiện</h3>
+                                <p>Thiết kế poster cho festival âm nhạc</p>
+                                <a href="#" class="view-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fbd6c327ab27?w=600&h=400&fit=crop" alt="Brochure Design">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Brochure công ty</h3>
+                                <p>Thiết kế brochure giới thiệu doanh nghiệp</p>
+                                <a href="#" class="view-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="logo">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=600&h=400&fit=crop" alt="Tech Logo">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Logo Tech Startup</h3>
+                                <p>Logo cho công ty công nghệ</p>
+                                <a href="#" class="view-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="poster">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=400&fit=crop" alt="Fashion Poster">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Poster thời trang</h3>
+                                <p>Thiết kế poster cho tuần lễ thời trang</p>
+                                <a href="#" class="view-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch vụ</h2>
+                <p class="section-subtitle">Các dịch vụ thiết kế chuyên nghiệp mà tôi cung cấp</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Thiết kế Logo</h3>
+                    <p>Tạo ra logo độc đáo, dễ nhớ và phản ánh đúng giá trị thương hiệu của bạn.</p>
+                    <ul class="service-features">
+                        <li>Nghiên cứu và phát triển concept</li>
+                        <li>Nhiều phiên bản lựa chọn</li>
+                        <li>File vector chất lượng cao</li>
+                        <li>Hướng dẫn sử dụng</li>
+                    </ul>
+                    <div class="service-price">Từ 800.000đ</div>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Phổ biến nhất</div>
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Nhận diện thương hiệu</h3>
+                    <p>Gói thiết kế nhận diện thương hiệu hoàn chỉnh từ logo đến ứng dụng.</p>
+                    <ul class="service-features">
+                        <li>Thiết kế logo chuyên nghiệp</li>
+                        <li>Bộ màu và font chữ thương hiệu</li>
+                        <li>Name card, letterhead</li>
+                        <li>Guideline sử dụng thương hiệu</li>
+                    </ul>
+                    <div class="service-price">Từ 2.500.000đ</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Thiết kế Poster & In ấn</h3>
+                    <p>Thiết kế poster, flyer, brochure và các ấn phẩm marketing khác.</p>
+                    <ul class="service-features">
+                        <li>Poster sự kiện, quảng cáo</li>
+                        <li>Flyer, brochure</li>
+                        <li>Catalog sản phẩm</li>
+                        <li>File in chuẩn CMYK</li>
+                    </ul>
+                    <div class="service-price">Từ 500.000đ</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Illustration & Digital Art</h3>
+                    <p>Tạo ra những hình ảnh minh họa độc đáo cho website, sách, app.</p>
+                    <ul class="service-features">
+                        <li>Minh họa nhân vật</li>
+                        <li>Illustration cho website</li>
+                        <li>Digital art tùy chỉnh</li>
+                        <li>Icon set chuyên nghiệp</li>
+                    </ul>
+                    <div class="service-price">Từ 1.000.000đ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Khách hàng nói gì</h2>
+                <p class="section-subtitle">Những phản hồi từ khách hàng đã hợp tác</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "teaak427 đã thiết kế logo rất ấn tượng cho startup của chúng tôi. 
+                            Thiết kế vừa hiện đại vừa có ý nghĩa, chính xác những gì chúng tôi mong đợi. 
+                            Tôi rất hài lòng với kết quả."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Nguyễn Minh Tuấn</h4>
+                                <span>CEO, TechVN Startup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Poster cho sự kiện của chúng tôi được thiết kế rất chuyên nghiệp và thu hút. 
+                            Nhiều khách hàng khen ngợi thiết kế và hỏi về designer. 
+                            Chắc chắn sẽ hợp tác lại trong tương lai."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Trần Lan Anh</h4>
+                                <span>Event Manager, Creative Hub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Bộ nhận diện thương hiệu cho nhà hàng vượt ngoài mong đợi của tôi. 
+                            Từ logo đến menu design, mọi thứ đều nhất quán và chuyên nghiệp. 
+                            Khách hàng rất ấn tượng với hình ảnh mới của nhà hàng."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Lê Hoàng Nam</h4>
+                                <span>Chủ nhà hàng Bistro Saigon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-nav">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên hệ</h2>
+                <p class="section-subtitle">Sẵn sàng thực hiện dự án tiếp theo của bạn</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Thông tin liên hệ</h3>
+                    <p class="contact-description">
+                        Bạn có một dự án cần thiết kế? Hãy liên hệ với tôi để thảo luận 
+                        và nhận báo giá miễn phí.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@teaak427.design</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Điện thoại</h4>
+                                <p>+84 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-facebook"></i>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p>fb.com/teaak427.design</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@teaak427.design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <div class="status-dot"></div>
+                        <span>Đang nhận dự án mới</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Họ tên *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Dịch vụ quan tâm</label>
+                            <select id="service" name="service">
+                                <option value="">Chọn dịch vụ</option>
+                                <option value="logo">Thiết kế Logo</option>
+                                <option value="branding">Nhận diện thương hiệu</option>
+                                <option value="poster">Poster & In ấn</option>
+                                <option value="illustration">Illustration</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Ngân sách dự kiến</label>
+                            <select id="budget" name="budget">
+                                <option value="">Chọn ngân sách</option>
+                                <option value="under-1m">Dưới 1 triệu</option>
+                                <option value="1-3m">1-3 triệu</option>
+                                <option value="3-5m">3-5 triệu</option>
+                                <option value="above-5m">Trên 5 triệu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mô tả dự án *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hãy mô tả chi tiết về dự án của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">teaak427</span>
+                    </div>
+                    <p>Nhà thiết kế đồ họa chuyên nghiệp</p>
+                    <p>Tạo ra những thiết kế độc đáo và ấn tượng</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4>Dịch vụ</h4>
+                        <ul>
+                            <li>Thiết kế Logo</li>
+                            <li>Nhận diện thương hiệu</li>
+                            <li>Poster & In ấn</li>
+                            <li>Illustration</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li>hello@teaak427.design</li>
+                            <li>+84 123 456 789</li>
+                            <li>TP. Hồ Chí Minh</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Theo dõi</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 teaak427. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
