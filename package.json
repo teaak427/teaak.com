@@ -1,0 +1,24 @@
+{
+  "name": "teaak427-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website cho nhà thiết kế đồ họa teaak427",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "build": "echo 'Static site - no build process needed'",
+    "start": "npx serve . -p 3000",
+    "preview": "npx serve . -p 4173"
+  },
+  "keywords": [
+    "portfolio", 
+    "graphic-design", 
+    "vietnam", 
+    "designer",
+    "teaak427"
+  ],
+  "author": "teaak427",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}
