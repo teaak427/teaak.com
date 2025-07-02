@@ -1,0 +1,10 @@
+according to the design system already applied to the product page, we need to focus on core elements across Mobile-First Responsive, Visual Design System, and Component Patterns.
+
+Mobile-First Responsive
+For a mobile-first responsive approach, the layout will be compact. This means reducing padding to p-3 on mobile and lg:p-0 on desktop, with vertical spacing (space-y) set to space-y-3 on mobile and lg:space-y-6 on desktop. The header will be more compact, featuring text-lg on mobile and lg:text-2xl on desktop for titles, while descriptions will be text-sm. Statistical grids will use grid-cols-4 gap-2 lg:gap-6 with text-center alignment. Crucially, tables will be replaced with a card layout for mobile, and all buttons will have a minimum size of 44px to ensure touch-friendliness.
+
+Visual Design System
+The visual design system mandates rounded-xl for containers and rounded-2xl for images. The shadow system will apply shadow-sm for cards and shadow-lg on hover. The color palette includes a Primary color of bg-[#007744] with hover:bg-[#006633], Success indicated by text-green-600 bg-green-100, Warning by text-orange-600 bg-orange-100, and Error by text-red-600 bg-red-100. Typography dictates font-bold for headers and font-medium for labels, adhering to an 8px spacing system.
+
+Component Patterns
+For component patterns, the search input will feature a Search icon positioned within the input field. This icon will have the class className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" and a size of 16. The input element itself will use the class className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#007744] focus:border-transparent text-sm", ensuring full width, appropriate padding for the icon, border styling, rounded corners, and a distinct focus effect.
